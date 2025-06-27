@@ -11,9 +11,12 @@ function NavBar() {
         <Link to={"/products"}>
           <li className="NavBar__List__Item">Products</li>
         </Link>
-        <li className="NavBar__List__Item">Features</li>
-        <li className="NavBar__List__Item">About</li>
-        <li className="NavBar__List__Item">Our Team</li>
+        <Link to={"/AboutPage"}>
+          <li className="NavBar__List__Item">About</li>
+        </Link>
+        <Link to={"/OurTeam"}>
+          <li className="NavBar__List__Item">Our Team</li>
+        </Link>
       </ul>
 
       <div className="SearchBox">
