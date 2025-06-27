@@ -21,9 +21,9 @@ function NewProducts() {
         </div>
         <div className="NewProductsColumn">
           <Product
-            itemName="Nike Metcon 9"
+            itemName="Cbum Protein"
             itemPrice={29.99}
-            itemImage="public/item_shoes_metcon9.png"
+            itemImage="public/item_protein_cbum.webp"
           />
         </div>
       </div>
