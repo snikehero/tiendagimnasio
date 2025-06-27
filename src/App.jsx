@@ -1,10 +1,10 @@
-import "./App.css";
+import NavBar from "./components/NavBar.jsx";
 
 import NewProducts from "./components/NewProducts.jsx";
 function App() {
   return (
     <div>
-      <h1> Bienvenido a la madriguera</h1>
+      <NavBar />
       <NewProducts />
     </div>
   );
