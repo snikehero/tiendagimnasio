@@ -8,6 +8,7 @@ function NavBar() {
         <li>Products</li>
         <li>Features</li>
         <li>About</li>
+        <li>Our Team</li>
       </ul>
 
       <div className="SearchBox">
