@@ -3,7 +3,9 @@ import { Link } from "react-router";
 function NavBar() {
   return (
     <div className="NavBar">
-      <img src="logo.jpg" alt="" className="NavBar__Logo" />
+      <Link to={"/"}>
+        <img src="logo.jpg" alt="" className="NavBar__Logo" />
+      </Link>
       <ul className="NavBar__List">
         <Link to={"/"}>
           <li className="NavBar__List__Item">Home</li>
@@ -13,9 +15,6 @@ function NavBar() {
         </Link>
         <Link to={"/AboutPage"}>
           <li className="NavBar__List__Item">About</li>
-        </Link>
-        <Link to={"/OurTeam"}>
-          <li className="NavBar__List__Item">Our Team</li>
         </Link>
       </ul>
 

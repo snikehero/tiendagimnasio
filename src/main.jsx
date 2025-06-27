@@ -9,8 +9,7 @@ import About from "./components/AboutPage/About.jsx";
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
   { path: "/*", element: <NotFoundPage /> },
-  { path: "/NavBar", element: <NavBar /> }, // Ejemplo <-
-  { path: "/AboutPage", element: <About /> },
+  { path: "/AboutPage", element: <About /> }, // Ejemplo <-
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
