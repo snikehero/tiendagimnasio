@@ -1,5 +1,5 @@
-import Product from "./Product.jsx";
-import "../NewProducts.css";
+import Product from "../Product/Product.jsx";
+import "./NewProducts.css";
 function NewProducts() {
   return (
     <div className="NewProducts">

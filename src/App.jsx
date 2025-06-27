@@ -1,6 +1,6 @@
-import NavBar from "./components/NavBar.jsx";
+import NavBar from "./components/NavBar/NavBar.jsx";
 
-import NewProducts from "./components/NewProducts.jsx";
+import NewProducts from "./components/NewProducts/NewProducts.jsx";
 function App() {
   return (
     <div>

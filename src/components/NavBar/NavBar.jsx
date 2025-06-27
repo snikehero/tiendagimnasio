@@ -1,8 +1,8 @@
-import "../NavBar.css";
+import "./NavBar.css";
 function NavBar() {
   return (
     <div className="NavBar">
-      <img src="icon247.png" alt="" className="Logo" />
+      <img src="logo.jpg" alt="" className="Logo" />
       <ul>
         <li>Home</li>
         <li>Products</li>

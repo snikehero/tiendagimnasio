@@ -8,8 +8,10 @@
 }
 
 .Logo {
-  width: 160px;
+  width: 80px;
   cursor: pointer;
+  border-radius: 50px;
+  opacity: 0.5;
 }
 
 ul {

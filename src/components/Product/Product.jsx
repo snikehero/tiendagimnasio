@@ -1,4 +1,4 @@
-import "../Product.css";
+import "./Product.css";
 function Product({ itemName, itemPrice, itemImage }) {
   return (
     <div className="ProductComponent">
