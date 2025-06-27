@@ -1,13 +1,29 @@
-import React from "react";
 import CollectionButton from "../CollectionButton/CollectionButton.jsx";
-import Product from "../Product/Product";
+import "./Collections.css";
 export default function Collections() {
   return (
-    <div>
-      <CollectionButton
-        collectionName={"Tenis"}
-        collectionImage={"banner_shoes_lotOfShoes.jpeg"}
-      />
+    <div className="CollectionsWrapper">
+      <h1 className="Collections__Title"> Categorias</h1>
+      <div className="Collections__Row">
+        <div className="Collections__Column">
+          <CollectionButton
+            collectionName={"Accesorios"}
+            collectionImage={"banner_shoes_lotOfShoes.jpeg"}
+          />
+        </div>
+        <div className="Collections__Column">
+          <CollectionButton
+            collectionName={"Tenis"}
+            collectionImage={"banner_shoes_lotOfShoes.jpeg"}
+          />
+        </div>
+        <div className="Collections__Column">
+          <CollectionButton
+            collectionName={"Straps"}
+            collectionImage={"banner_shoes_lotOfShoes.jpeg"}
+          />
+        </div>
+      </div>
     </div>
   );
 }

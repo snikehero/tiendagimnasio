@@ -6,6 +6,7 @@ function App() {
     <div>
       <NavBar />
       <NewProducts />
+      <Collections />
     </div>
   );
 }

@@ -2,23 +2,15 @@ import React from "react";
 import "./CollectionsButton.css";
 export default function CollectionButton({ collectionName, collectionImage }) {
   return (
-    <div className="wrapper">
-      <div className="card">
+    <div className="CollectionButtonWrapper">
+      <h1 className="CollectionButtonWrapper__Name"> {collectionName}</h1>
+      <button className="CollectionButton__Button">
         <img
           src={collectionImage}
           alt={collectionName}
-          className="CollectionImage"
+          className="CollectionButton__Image"
         />
-        <div className="Content">
-          <div className="Row">
-            <div className="Details">
-              <span>Zapateria</span>
-              <p> Zapateria Premium</p>
-            </div>
-            <div className="Price"> </div>
-          </div>
-        </div>
-      </div>
+      </button>
     </div>
   );
 }

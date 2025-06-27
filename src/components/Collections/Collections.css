@@ -1,0 +1,19 @@
+.Collections__Column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.Collections__Row {
+  display: flex;
+}
+
+.Collections__Title {
+  text-align: center;
+}
+
+.CollectionsWrapper {
+  text-align: center;
+  color: black;
+  font-weight: normal;
+  background-color: aliceblue;
+}
