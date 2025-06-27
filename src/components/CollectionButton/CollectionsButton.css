@@ -1,12 +1,23 @@
 .CollectionButtonWrapper {
   position: relative;
-  text-align: center;
-  font-style: italic;
-  color: white;
+  width: 50;
 }
-.CollectionButtonWrapper__Name {
+.CollectionButton__Button {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.CollectionButton__Image {
+  height: 200px;
+  width: 350px;
 }

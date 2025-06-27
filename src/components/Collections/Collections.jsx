@@ -8,7 +8,7 @@ export default function Collections() {
         <div className="Collections__Column">
           <CollectionButton
             collectionName={"Accesorios"}
-            collectionImage={"banner_shoes_lotOfShoes.jpeg"}
+            collectionImage={"banner_accesories_weights.jpeg"}
           />
         </div>
         <div className="Collections__Column">
@@ -20,7 +20,7 @@ export default function Collections() {
         <div className="Collections__Column">
           <CollectionButton
             collectionName={"Straps"}
-            collectionImage={"banner_shoes_lotOfShoes.jpeg"}
+            collectionImage={"banner_straps_blackStraps.jpeg"}
           />
         </div>
       </div>
