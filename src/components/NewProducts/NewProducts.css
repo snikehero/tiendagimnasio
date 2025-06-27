@@ -1,13 +1,13 @@
 .NewProducts {
   background-color: #d0d0d0;
 }
-.NewProducts h1 {
+.NewProducts__Text {
   text-align: center;
   color: black;
   font-size: 32px;
-  font-weight: normal;
+  font-weight: bold;
 }
-.NewProductsRow {
+.NewProducts__Row {
   display: flex;
   align-items: center;
   justify-content: space-around;

@@ -3,8 +3,8 @@ import "./NewProducts.css";
 function NewProducts() {
   return (
     <div className="NewProducts">
-      <h1> Productos Nuevos</h1>
-      <div className="NewProductsRow">
+      <h1 className="NewProducts__Text"> Productos Nuevos</h1>
+      <div className="NewProducts__Row">
         <div className="NewProductsColumn">
           <Product
             itemName="Nike Metcon 9"

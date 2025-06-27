@@ -7,22 +7,22 @@
   padding: 15px 7%;
 }
 
-.Logo {
+.NavBar__Logo {
   width: 80px;
   cursor: pointer;
   border-radius: 50px;
   opacity: 0.5;
 }
 
-ul {
+.NavBar__List {
   flex: 1;
   list-style: none;
   text-align: center;
 }
-ul li {
+.NavBar__List__Item {
   display: inline-block;
   margin: 10px 20px;
-  font-size: 18px;
+  font-size: 30px;
   cursor: pointer;
 }
 
@@ -34,7 +34,7 @@ ul li {
   border-radius: 50px;
 }
 
-.SearchBox input {
+.SearchBox__Text {
   padding: 6px;
   background: transparent;
   border: 0;
@@ -44,10 +44,10 @@ ul li {
   max-width: 200px;
 }
 
-.SearchBox input::placeholder {
+.SearchBox__Text::placeholder {
   color: #fff;
 }
-.CartIcon {
+.NavBar__CartIcon {
   width: 30px;
   cursor: pointer;
 }
