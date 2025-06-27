@@ -1,26 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-.ProductComponent {
-  background-color: white;
-  max-width: 300px;
-  text-align: center;
-  font-family: Roboto;
-}
-.ProductImage {
-  width: 100%;
-  height: 330px;
+
+.Card {
+  position: relative;
+  width: calc(33% -13px);
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
 }
 
-.ProductDetails {
-  background-color: #f9f7f7;
+.Card__Image {
+  width: 400px;
+  height: 400px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
 }
-.ProductName {
-  color: black;
+.Card__Image:hover {
+  transform: scale(1.1);
+}
+
+.Card__Content {
+  position: absolute;
+  width: 90%;
+  background: #575454;
+  bottom: -50%;
+  padding: 10px 20px 22px 20px;
+  transition: all 0.3s ease;
+}
+.Card:hover .Card__Content {
+  bottom: 0;
+}
+.Card__Content .Row,
+.Card__Content .Buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Card__Content .Card__Row .Card__Details span {
   font-size: 22px;
   font-weight: bold;
 }
 
-.ProductPrice {
-  color: black;
-  font-size: 22px;
-  font-weight: 300;
+.Card__Content .Card__Row .Card__Details p {
+  color: #7b7979;
+  font-size: 17px;
+  font-weight: 400;
+}
+.Card__Content .Card__Row .Card__Price {
+  color: #ff7979;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.Card__Content .Card__Buttons {
+  margin-left: 20px;
+}
+.Card__Content .Card__Buttons button {
+  width: 100px;
+  padding: 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 3px;
+  border: 2px solid #ff7979;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.Card__Buttons button:first-child {
+  color: #ff7979;
+  background: #fff;
+  margin-right: 10px;
+}
+button:first-child:hover {
+  color: #fff;
+  background: #ff7979;
+}
+.Card__Buttons button:last-child {
+  color: #fff;
+  background: #ff7979;
+  margin-left: 10px;
+}
+button:last-child:hover {
+  background: #ff6666;
+  border-color: #ff6666;
 }

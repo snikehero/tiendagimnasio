@@ -1,6 +1,5 @@
 .NewProducts {
-  flex-wrap: wrap;
-  background-color: #ccc;
+  background-color: #d0d0d0;
 }
 .NewProducts h1 {
   text-align: center;
@@ -10,6 +9,6 @@
 }
 .NewProductsRow {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-around;
 }

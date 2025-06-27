@@ -10,6 +10,9 @@ function NewProducts() {
             itemName="Nike Metcon 9"
             itemPrice={29.99}
             itemImage="item_shoes_metcon9.png"
+            itemDescription={
+              "Zapatillas de entrenamiento versátiles y duraderas."
+            }
           />
         </div>
         <div className="NewProductsColumn">
@@ -17,6 +20,7 @@ function NewProducts() {
             itemName="Playera Negra"
             itemPrice={29.99}
             itemImage="item_tshirt_playeranegra.png"
+            itemDescription={"Playera negra de algodón, cómoda y elegante."}
           />
         </div>
         <div className="NewProductsColumn">
@@ -24,6 +28,9 @@ function NewProducts() {
             itemName="Cbum Protein"
             itemPrice={29.99}
             itemImage="item_protein_cbum.webp"
+            itemDescription={
+              "Proteína de alta calidad para tus entrenamientos."
+            }
           />
         </div>
       </div>

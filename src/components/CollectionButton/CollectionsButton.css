@@ -1,0 +1,12 @@
+.CollectionImage {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+.CollectionText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

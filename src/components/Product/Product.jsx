@@ -1,11 +1,22 @@
 import "./Product.css";
-function Product({ itemName, itemPrice, itemImage }) {
+function Product({ itemName, itemPrice, itemImage, itemDescription }) {
   return (
-    <div className="ProductComponent">
-      <img className="ProductImage" src={itemImage} alt={itemName} />
-      <div className="ProductDetails">
-        <p className="ProductName">{itemName}</p>
-        <p className="ProductPrice">${itemPrice}</p>
+    <div className="Card">
+      <img src={itemImage} alt={itemName} className="Card__Image" />
+      <div className="Card__Content">
+        <div className="Card__Row">
+          <div className="Card__Details">
+            <span>{itemName}</span>
+            <p>{itemDescription}</p>
+          </div>
+          <div className="Card__Price">${itemPrice}</div>
+        </div>
+        <div className="Card__Buttons">
+          <button className="Card__Buttons--ComprarAhora">Comprar Ahora</button>
+          <button className="Card__Buttons--AddToCart">
+            Añadir al Carrito
+          </button>
+        </div>
       </div>
     </div>
   );
