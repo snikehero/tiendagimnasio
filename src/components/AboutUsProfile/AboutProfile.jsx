@@ -1,5 +1,5 @@
 import React from "react";
-import "../AboutPage/About.css";
+import "./AboutProfile.css";
 export default function AboutProfile({
   image,
   name,
@@ -8,12 +8,12 @@ export default function AboutProfile({
   email,
 }) {
   return (
-    <div class="column">
-      <div class="card">
+    <div className="AboutProfile__Column">
+      <div className="AboutProfile__Card">
         <img src={image} alt={name} />
-        <div class="container">
+        <div className="AboutProfile__Container">
           <h2>{name}</h2>
-          <p class="title">{title}</p>
+          <p className="AboutProfile__Title">{title}</p>
           <p>{description}</p>
           <p>{email}</p>
         </div>

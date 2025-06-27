@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="AboutPage">
       <NavBar />
-      <div class="about-section">
+      <div className="About__Section">
         <h1>About Us Page</h1>
         <p>Some text about who we are and what we do.</p>
         <p>
@@ -14,8 +14,8 @@ export default function About() {
           way.
         </p>
       </div>
-      <h2>Our Team</h2>
-      <div class="row">
+      <h2 className="About__OurTeamText">Our Team</h2>
+      <div className="About__Row">
         <AboutProfile
           image={"https://api.dicebear.com/9.x/dylan/svg"}
           name={"Jane Doe"}
