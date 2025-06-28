@@ -7,9 +7,7 @@ export default function SingleProductPage() {
   const { id } = useParams();
   return (
     <div className="SingleProductPage">
-      <NavBar />
       <SingleProductDetail itemId={id} />
-      <Footer />
     </div>
   );
 }

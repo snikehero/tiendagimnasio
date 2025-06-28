@@ -7,7 +7,6 @@ import Footer from "../Footer/Footer.jsx";
 export default function AllProducts() {
   return (
     <div className="AllProductsPage">
-      <NavBar />
       <h1 className="AllProductsPage__Title">
         En esta pagina podras ver el listado de todos los productos que vendemos
       </h1>
@@ -24,7 +23,6 @@ export default function AllProducts() {
           </div>
         ))}
       </div>
-      <Footer />
     </div>
   );
 }

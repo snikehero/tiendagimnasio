@@ -5,7 +5,6 @@ import AboutProfile from "../AboutUsProfile/AboutProfile.jsx";
 export default function About() {
   return (
     <div className="AboutPage">
-      <NavBar />
       <div className="About__Section">
         <h1>About Us Page</h1>
         <p>Some text about who we are and what we do.</p>

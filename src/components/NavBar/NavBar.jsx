@@ -1,14 +1,10 @@
 import "./NavBar.css";
 import { Link } from "react-router";
-function NavBar() {
+const NavBar = () => {
   return (
     <div className="NavBar">
       <Link to={"/"}>
-        <img
-          src="../../public/logo.jpg"
-          alt="../../public/logo.jpg"
-          className="NavBar__Logo"
-        />
+        <img src="logo.jpg" alt="logo.jpg" className="NavBar__Logo" />
       </Link>
       <ul className="NavBar__List">
         <Link to={"/"}>
@@ -39,5 +35,5 @@ function NavBar() {
       </div>
     </div>
   );
-}
+};
 export default NavBar;
