@@ -14,7 +14,7 @@ export default function AllProducts() {
         {mockData.map((item) => (
           <div className="EachProduct__Container">
             <Product
-              itemName={item.id}
+              itemName={item.name}
               itemPrice={item.price}
               itemImage={item.image}
               itemDescription={item.description}

@@ -43,16 +43,17 @@ footer {
   justify-content: center;
 }
 
-.FooterNav__List__Item a {
+.FooterNav__List__Item {
   color: white;
   margin: 20px;
   text-decoration: none;
   font-size: 1.3em;
   opacity: 0.7;
   transition: 0.5s;
+  cursor: pointer;
 }
 
-.FooterNav__List__Item a:hover {
+.FooterNav__List__Item:hover {
   opacity: 1;
 }
 
