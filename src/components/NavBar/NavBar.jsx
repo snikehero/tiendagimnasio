@@ -4,7 +4,11 @@ function NavBar() {
   return (
     <div className="NavBar">
       <Link to={"/"}>
-        <img src="logo.jpg" alt="" className="NavBar__Logo" />
+        <img
+          src="../../public/logo.jpg"
+          alt="../../public/logo.jpg"
+          className="NavBar__Logo"
+        />
       </Link>
       <ul className="NavBar__List">
         <Link to={"/"}>

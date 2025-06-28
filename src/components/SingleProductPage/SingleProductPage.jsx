@@ -6,7 +6,7 @@ import { useParams } from "react-router";
 export default function SingleProductPage() {
   const { id } = useParams();
   return (
-    <div>
+    <div className="SingleProductPage">
       <NavBar />
       <SingleProductDetail itemId={id} />
       <Footer />

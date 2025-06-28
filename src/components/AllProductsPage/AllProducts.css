@@ -1,0 +1,7 @@
+.AllProductsPage__Title {
+  text-align: center;
+}
+.AllProducts__Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
