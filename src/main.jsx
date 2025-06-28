@@ -11,7 +11,7 @@ const router = createBrowserRouter([
   { path: "/", element: <App /> },
   { path: "/*", element: <NotFoundPage /> },
   { path: "/AboutPage", element: <About /> }, // Ejemplo <-
-  { path: "/SingleProductPage", element: <SingleProductPage /> },
+  { path: "/SingleProductPage/:id", element: <SingleProductPage /> },
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>

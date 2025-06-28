@@ -13,6 +13,7 @@ function NewProducts() {
             itemDescription={
               "Zapatillas de entrenamiento versátiles y duraderas."
             }
+            id={0}
           />
         </div>
         <div className="NewProductsColumn">
@@ -21,6 +22,7 @@ function NewProducts() {
             itemPrice={29.99}
             itemImage="item_tshirt_playeranegra.png"
             itemDescription={"Playera negra de algodón, cómoda y elegante."}
+            id={1}
           />
         </div>
         <div className="NewProductsColumn">
@@ -31,6 +33,7 @@ function NewProducts() {
             itemDescription={
               "Proteína de alta calidad para tus entrenamientos."
             }
+            id={2}
           />
         </div>
       </div>

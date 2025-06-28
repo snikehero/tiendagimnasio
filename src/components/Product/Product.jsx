@@ -1,10 +1,10 @@
 import "./Product.css";
 import { Link } from "react-router";
 
-function Product({ itemName, itemPrice, itemImage, itemDescription }) {
+function Product({ itemName, itemPrice, itemImage, itemDescription, id }) {
   return (
     <div className="Card">
-      <Link to={"/SingleProductPage"}>
+      <Link to={`/SingleProductPage/${id}`}>
         <img src={itemImage} alt={itemName} className="Card__Image" />
       </Link>
       <div className="Card__Content">

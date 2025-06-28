@@ -1,22 +1,17 @@
 import React from "react";
 import "./SingleProductDetail.css";
-export default function SingleProductDetail({
-  image,
-  name,
-  description,
-  price,
-  category,
-}) {
+import mockData from "../../../mockData.json";
+export default function SingleProductDetail({ itemId }) {
   return (
     <div className="small-container single-product">
       <div className="row">
         <div className="col-2">
-          <img src={image} alt={name} />
+          <img src={mockData[itemId].image} alt={mockData[itemId].name} />
         </div>
         <div className="col2">
-          <p>Home / {category}</p>
-          <h1>{name}</h1>
-          <h4>{price}</h4>
+          <p>Home / {mockData[itemId].category}</p>
+          <h1>{mockData[itemId].name}</h1>
+          <h4>{mockData[itemId].price}</h4>
           <select>
             <option>Seleccione Talla</option>
             <option>S</option>
@@ -32,7 +27,7 @@ export default function SingleProductDetail({
             {" "}
             Detalles del producto <i className="fa fa-indent"></i>
           </h3>
-          <p>{description}</p>
+          <p>{mockData[itemId].description}</p>
         </div>
       </div>
     </div>

@@ -2,24 +2,13 @@ import React from "react";
 import SingleProductDetail from "../SingleProductDetail/SingleProductDetail";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
-export default function SingleProductPage({
-  image,
-  name,
-  description,
-  price,
-  category,
-}) {
+import { useParams } from "react-router";
+export default function SingleProductPage() {
+  const { id } = useParams();
   return (
     <div>
       <NavBar />
-
-      <SingleProductDetail
-        image={image}
-        name={name}
-        description={description}
-        price={price}
-        category={category}
-      />
+      <SingleProductDetail itemId={id} />
       <Footer />
     </div>
   );
