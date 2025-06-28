@@ -10,7 +10,7 @@ function NavBar() {
         <Link to={"/"}>
           <li className="NavBar__List__Item">Home</li>
         </Link>
-        <Link to={"/products"}>
+        <Link to={"/AllProducts"}>
           <li className="NavBar__List__Item">Products</li>
         </Link>
         <Link to={"/AboutPage"}>

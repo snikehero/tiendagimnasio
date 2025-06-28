@@ -22,5 +22,77 @@
     "category": "Proteina",
     "price": 111,
     "description": "Proteina de la mas alta calidad"
+  },
+  {
+    "id": 3,
+    "image": "../item_socks_blueSocks.jpg",
+    "name": "Calcetines Azules",
+    "category": "Calcetines",
+    "Price": 10,
+    "description": "Calcetines baratos"
+  },
+  {
+    "id": 4,
+    "image": "../placeholder.jpg",
+    "name": "Guantes GymGrip",
+    "category": "Accesorios",
+    "price": 45,
+    "description": "Guantes acolchados para levantar pesas"
+  },
+  {
+    "id": 5,
+    "image": "../placeholder.jpg",
+    "name": "Shaker IronMix",
+    "category": "Accesorios",
+    "price": 25,
+    "description": "Shaker con compartimentos para suplemento"
+  },
+  {
+    "id": 6,
+    "image": "../placeholder.jpg",
+    "name": "Nike ReactX",
+    "category": "Tenis",
+    "price": 199,
+    "description": "Tenis ligeros con buena amortiguación"
+  },
+  {
+    "id": 7,
+    "image": "../placeholder.jpg",
+    "name": "Playera Roja",
+    "category": "Playeras",
+    "price": 119,
+    "description": "Playera deportiva color rojo"
+  },
+  {
+    "id": 8,
+    "image": "../placeholder.jpg",
+    "name": "Cinturón Powerlifting",
+    "category": "Accesorios",
+    "price": 75,
+    "description": "Cinturón de cuero para levantamiento de pesas"
+  },
+  {
+    "id": 9,
+    "image": "../placeholder.jpg",
+    "name": "Proteína ISO100",
+    "category": "Proteina",
+    "price": 139,
+    "description": "Aislado de suero para recuperación muscular"
+  },
+  {
+    "id": 10,
+    "image": "../placeholder.jpg",
+    "name": "Calcetines Negros",
+    "category": "Calcetines",
+    "price": 12,
+    "description": "Calcetines deportivos transpirables"
+  },
+  {
+    "id": 11,
+    "image": "../placeholder.jpg",
+    "name": "Shorts GymFlex",
+    "category": "Ropa Deportiva",
+    "price": 89,
+    "description": "Shorts cómodos para entrenamiento intenso"
   }
 ]
