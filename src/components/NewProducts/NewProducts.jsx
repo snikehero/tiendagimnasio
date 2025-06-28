@@ -1,5 +1,6 @@
 import Product from "../Product/Product.jsx";
 import "./NewProducts.css";
+import mockData from "../../../mockData.json";
 function NewProducts() {
   return (
     <div className="NewProducts">
@@ -7,33 +8,29 @@ function NewProducts() {
       <div className="NewProducts__Row">
         <div className="NewProductsColumn">
           <Product
-            itemName="Nike Metcon 9"
-            itemPrice={29.99}
-            itemImage="item_shoes_metcon9.png"
-            itemDescription={
-              "Zapatillas de entrenamiento versátiles y duraderas."
-            }
-            id={0}
+            itemName={mockData[0].name}
+            itemPrice={mockData[0].price}
+            itemImage={mockData[0].image}
+            itemDescription={mockData[0].description}
+            id={mockData[0].id}
           />
         </div>
         <div className="NewProductsColumn">
           <Product
-            itemName="Playera Negra"
-            itemPrice={29.99}
-            itemImage="item_tshirt_playeranegra.png"
-            itemDescription={"Playera negra de algodón, cómoda y elegante."}
-            id={1}
+            itemName={mockData[1].name}
+            itemPrice={mockData[1].price}
+            itemImage={mockData[1].image}
+            itemDescription={mockData[1].description}
+            id={mockData[1].id}
           />
         </div>
         <div className="NewProductsColumn">
           <Product
-            itemName="Cbum Protein"
-            itemPrice={29.99}
-            itemImage="item_protein_cbum.webp"
-            itemDescription={
-              "Proteína de alta calidad para tus entrenamientos."
-            }
-            id={2}
+            itemName={mockData[2].name}
+            itemPrice={mockData[2].price}
+            itemImage={mockData[2].image}
+            itemDescription={mockData[2].description}
+            id={mockData[2].id}
           />
         </div>
       </div>

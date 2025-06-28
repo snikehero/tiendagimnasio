@@ -1,14 +1,14 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "image": "../item_shoes_metcon9.png",
     "name": "Nike Metcon 9",
     "category": "Tenis",
     "price": 224,
-    "description": "Unos tenis chullos"
+    "description": "Unos tenis chulos"
   },
   {
-    "id": 2,
+    "id": 1,
     "image": "../item_tshirt_playeranegra.png",
     "name": "Playera Negra",
     "category": "Playeras",
@@ -16,7 +16,7 @@
     "description": "Una playera negra"
   },
   {
-    "id": 3,
+    "id": 2,
     "image": "../item_protein_cbum.webp",
     "name": "Proteina CBUM",
     "category": "Proteina",
