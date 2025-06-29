@@ -3,5 +3,11 @@
 }
 .AllProducts__Container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+.EachProduct__Container {
+  height: 400px;
+  width: 400px;
 }
