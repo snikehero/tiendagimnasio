@@ -1,21 +1,49 @@
-.Collections__Column {
-  flex: 33.33%;
-  padding: 5px;
-}
-
-.Collections__Row {
-  display: flex;
+.CollectionsWrapper {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* centra el contenido */
 }
 
 .Collections__Title {
-  text-align: center;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+.Collections__Row {
+  display: flex;
+  flex-wrap: nowrap; /* que no hagan wrap */
+  gap: 20px;
+  justify-content: space-between;
 }
 
-.CollectionsWrapper {
-  text-align: center;
-  color: black;
-  font-weight: normal;
-  background-color: aliceblue;
+.Collections__Column {
+  flex: 0 0 23%;
+  max-width: 23%;
+  box-sizing: border-box;
+}
+
+.Collections__Column:hover {
+  /* si quieres resaltar la columna al pasar el mouse */
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+@media (max-width: 768px) {
+  .Collections__Row {
+    flex-wrap: wrap;
+  }
+
+  .Collections__Column {
+    flex: 1 1 48%; /* dos columnas por fila */
+    max-width: 48%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Collections__Column {
+    flex: 1 1 100%; /* una columna por fila */
+    max-width: 100%;
+  }
 }

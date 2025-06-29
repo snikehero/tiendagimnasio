@@ -12,7 +12,7 @@ export default function AllProducts() {
       </h1>
       <div className="AllProducts__Container">
         {mockData.map((item) => (
-          <div className="EachProduct__Container">
+          <div key={item.id} className="EachProduct__Container">
             <Product
               itemName={item.name}
               itemPrice={item.price}

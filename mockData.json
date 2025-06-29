@@ -5,7 +5,8 @@
     "name": "Nike Metcon 9",
     "category": "Calzado",
     "price": 224,
-    "description": "Unos tenis chulos"
+    "description": "Unos tenis chulos",
+    "largeDescription": "Los Nike Metcon 9 ofrecen soporte, estabilidad y durabilidad excepcionales para entrenamientos de alta intensidad. Su suela rígida y base ancha permiten un levantamiento de pesas más seguro, mientras que su parte superior de malla mantiene el pie ventilado."
   },
   {
     "id": 1,
@@ -13,7 +14,8 @@
     "name": "Playera Negra",
     "category": "Ropa Deportiva",
     "price": 123,
-    "description": "Una playera negra"
+    "description": "Una playera negra",
+    "largeDescription": "Confeccionada con tela ligera y tecnología de absorción de sudor, esta playera negra es ideal para entrenamientos largos. Su diseño clásico combina con cualquier prenda deportiva y permite total libertad de movimiento."
   },
   {
     "id": 2,
@@ -21,7 +23,8 @@
     "name": "Proteina CBUM",
     "category": "Suplementos",
     "price": 111,
-    "description": "Proteina de la mas alta calidad"
+    "description": "Proteina de la mas alta calidad",
+    "largeDescription": "La proteína CBUM está formulada por el reconocido atleta Chris Bumstead. Contiene aislado de suero de leche puro, ideal para ganar masa muscular magra y acelerar la recuperación post-entrenamiento. Sin azúcares añadidos ni rellenos."
   },
   {
     "id": 3,
@@ -29,7 +32,8 @@
     "name": "Calcetines Azules",
     "category": "Calzado",
     "price": 10,
-    "description": "Calcetines baratos"
+    "description": "Calcetines baratos",
+    "largeDescription": "Estos calcetines deportivos azules están fabricados con algodón suave y fibras elásticas para una mejor sujeción. Diseñados para resistir múltiples lavadas sin perder la forma, son cómodos para uso diario o entrenamiento."
   },
   {
     "id": 4,
@@ -37,7 +41,8 @@
     "name": "Guantes GymGrip",
     "category": "Accesorios",
     "price": 45,
-    "description": "Guantes acolchados para levantar pesas"
+    "description": "Guantes acolchados para levantar pesas",
+    "largeDescription": "Los guantes GymGrip proporcionan agarre antideslizante y protección en las palmas. Perfectos para entrenamientos con pesas, barras o máquinas, reducen el riesgo de ampollas y aumentan la comodidad durante tus rutinas."
   },
   {
     "id": 5,
@@ -45,7 +50,8 @@
     "name": "Shaker IronMix",
     "category": "Accesorios",
     "price": 25,
-    "description": "Shaker con compartimentos para suplemento"
+    "description": "Shaker con compartimentos para suplemento",
+    "largeDescription": "El Shaker IronMix cuenta con múltiples compartimentos para proteína en polvo, cápsulas o snacks. Fabricado con plástico libre de BPA y cierre hermético, ideal para llevar tus suplementos a cualquier parte sin derrames."
   },
   {
     "id": 6,
@@ -53,7 +59,8 @@
     "name": "Nike ReactX",
     "category": "Calzado",
     "price": 199,
-    "description": "Tenis ligeros con buena amortiguación"
+    "description": "Tenis ligeros con buena amortiguación",
+    "largeDescription": "Los Nike ReactX están diseñados para brindar máxima amortiguación y retorno de energía en cada paso. Su suela React es perfecta para entrenamientos dinámicos o carreras cortas, y su diseño moderno ofrece gran estilo."
   },
   {
     "id": 7,
@@ -61,7 +68,8 @@
     "name": "Playera Roja",
     "category": "Ropa Deportiva",
     "price": 119,
-    "description": "Playera deportiva color rojo"
+    "description": "Playera deportiva color rojo",
+    "largeDescription": "Esta playera roja cuenta con tela ligera DryFit que mantiene el cuerpo seco. Su ajuste entallado permite movimientos sin restricciones, ideal para entrenamientos de cardio o fuerza."
   },
   {
     "id": 8,
@@ -69,7 +77,8 @@
     "name": "Cinturón Powerlifting",
     "category": "Accesorios",
     "price": 75,
-    "description": "Cinturón de cuero para levantamiento de pesas"
+    "description": "Cinturón de cuero para levantamiento de pesas",
+    "largeDescription": "Fabricado en cuero grueso y resistente, este cinturón de powerlifting brinda un excelente soporte lumbar durante levantamientos pesados como sentadillas o peso muerto. Aumenta la seguridad y mejora la postura bajo carga."
   },
   {
     "id": 9,
@@ -77,7 +86,8 @@
     "name": "Proteína ISO100",
     "category": "Suplementos",
     "price": 139,
-    "description": "Aislado de suero para recuperación muscular"
+    "description": "Aislado de suero para recuperación muscular",
+    "largeDescription": "La Proteína ISO100 contiene aislado de suero de digestión rápida y alto valor biológico. Ideal para consumir después del entrenamiento, ayuda a reparar fibras musculares y promover el crecimiento sin grasa añadida."
   },
   {
     "id": 10,
@@ -85,7 +95,8 @@
     "name": "Calcetines Negros",
     "category": "Calzado",
     "price": 12,
-    "description": "Calcetines deportivos transpirables"
+    "description": "Calcetines deportivos transpirables",
+    "largeDescription": "Estos calcetines negros están diseñados para deportistas. Cuentan con zonas reforzadas en talón y puntera, además de tejido de malla que mejora la ventilación y mantiene los pies secos."
   },
   {
     "id": 11,
@@ -93,6 +104,79 @@
     "name": "Shorts GymFlex",
     "category": "Ropa Deportiva",
     "price": 89,
-    "description": "Shorts cómodos para entrenamiento intenso"
+    "description": "Shorts cómodos para entrenamiento intenso",
+    "largeDescription": "Los shorts GymFlex están elaborados con poliéster elástico y liviano. Tienen cintura ajustable, bolsillos laterales y paneles de malla que ofrecen libertad de movimiento y frescura en cada sesión de ejercicio."
+  },
+  {
+    "id": 12,
+    "image": "../placeholder.jpg",
+    "name": "Tenis Puma Fuse",
+    "category": "Calzado",
+    "price": 210,
+    "description": "Calzado ideal para entrenamientos funcionales",
+    "largeDescription": "Diseñados para ofrecer estabilidad y durabilidad durante entrenamientos funcionales de alta intensidad, los Tenis Puma Fuse cuentan con una suela de goma adherente, refuerzos laterales para mayor soporte y una estructura de baja altura que mejora el equilibrio. Perfectos para levantamiento de pesas, sprints o trabajo en circuito."
+  },
+  {
+    "id": 13,
+    "image": "../placeholder.jpg",
+    "name": "Tank Top DryFit",
+    "category": "Ropa Deportiva",
+    "price": 99,
+    "description": "Camiseta sin mangas con tela transpirable",
+    "largeDescription": "La Tank Top DryFit está confeccionada con un tejido ultraligero y transpirable que mantiene tu cuerpo seco incluso en las sesiones más intensas. Su corte sin mangas proporciona libertad de movimiento total, ideal para ejercicios de hombro, pecho y espalda. Diseño minimalista con costuras planas que evitan rozaduras."
+  },
+  {
+    "id": 14,
+    "image": "../placeholder.jpg",
+    "name": "Proteína Vegana Orgánica",
+    "category": "Suplementos",
+    "price": 130,
+    "description": "Suplemento vegetal para recuperación",
+    "largeDescription": "Esta proteína en polvo está formulada a base de chícharo, arroz integral y chía, ofreciendo un perfil completo de aminoácidos esenciales. Ideal para personas con intolerancia a la lactosa o quienes siguen una dieta basada en plantas. Fortificada con B12 y hierro, ayuda a mejorar la recuperación muscular de forma natural y sin químicos."
+  },
+  {
+    "id": 15,
+    "image": "../placeholder.jpg",
+    "name": "Muñequeras ProGrip",
+    "category": "Accesorios",
+    "price": 35,
+    "description": "Muñequeras ajustables para mayor soporte",
+    "largeDescription": "Las muñequeras ProGrip están diseñadas para brindar soporte durante ejercicios que involucran carga en las muñecas, como press de banca, overhead press y handstand push-ups. Fabricadas con tela elástica y velcro resistente, permiten un ajuste seguro y cómodo, reduciendo el riesgo de lesiones y mejorando la estabilidad."
+  },
+  {
+    "id": 16,
+    "image": "../placeholder.jpg",
+    "name": "Nike Air Zoom SuperRep",
+    "category": "Calzado",
+    "price": 230,
+    "description": "Tenis para entrenamiento HIIT",
+    "largeDescription": "Los Nike Air Zoom SuperRep son ideales para entrenamientos HIIT, cardio y clases funcionales. Su sistema de amortiguación Zoom Air distribuye el impacto de forma eficiente, mientras que su diseño anatómico mejora la agilidad en movimientos laterales. Incorporan una malla superior transpirable para mantener tus pies frescos y cómodos."
+  },
+  {
+    "id": 17,
+    "image": "../placeholder.jpg",
+    "name": "Leggings Compresivos",
+    "category": "Ropa Deportiva",
+    "price": 110,
+    "description": "Leggings de compresión para entrenamiento",
+    "largeDescription": "Confeccionados con tejido de compresión de alto rendimiento, estos leggings promueven la circulación sanguínea y reducen la fatiga muscular. Su diseño ergonómico se ajusta perfectamente al cuerpo, ofreciendo soporte en glúteos, muslos y pantorrillas. Ideales para correr, hacer pesas o sesiones de yoga intensas."
+  },
+  {
+    "id": 18,
+    "image": "../placeholder.jpg",
+    "name": "Pre-Entreno Explosivo",
+    "category": "Suplementos",
+    "price": 85,
+    "description": "Energía y enfoque antes del entrenamiento",
+    "largeDescription": "Este pre-entreno contiene cafeína anhidra, beta-alanina y L-arginina para incrementar la energía, mejorar el enfoque mental y optimizar el rendimiento muscular. Con sabores frutales y sin azúcar añadida, es perfecto para quienes necesitan un impulso antes de entrenar sin sufrir bajones de energía después."
+  },
+  {
+    "id": 19,
+    "image": "../placeholder.jpg",
+    "name": "Cuerda para Saltar SpeedPro",
+    "category": "Accesorios",
+    "price": 22,
+    "description": "Cuerda rápida para cardio de alta intensidad",
+    "largeDescription": "Ideal para entrenamiento cardiovascular de alta intensidad, esta cuerda para saltar tiene rodamientos metálicos que permiten giros ultrarrápidos. El cable recubierto en PVC garantiza durabilidad y resistencia al desgaste, mientras que las empuñaduras ergonómicas ofrecen un agarre firme incluso con las manos sudadas."
   }
 ]

@@ -1,33 +1,42 @@
+import mockData from "../../../mockData.json";
 import React from "react";
 import "./SingleProductDetail.css";
-import mockData from "../../../mockData.json";
-export default function SingleProductDetail({ itemId }) {
+
+export default function SingleProductDetail({ itemId, onAddToCart }) {
+  if (itemId === undefined || itemId === null || !mockData[itemId])
+    return <p>Producto no encontrado.</p>;
+
+  const product = mockData[itemId];
+
   return (
-    <div className="small-container single-product">
-      <div className="row">
-        <div className="col-2">
-          <img src={mockData[itemId].image} alt={mockData[itemId].name} />
+    <div className="single-product-detail">
+      <div className="single-product-detail__image-container">
+        <img
+          src={product.image}
+          alt={product.name}
+          className="single-product-detail__image"
+        />
+      </div>
+      <div className="single-product-detail__info">
+        <div className="single-product-detail__breadcrumb">
+          Home / {product.category}
         </div>
-        <div className="col2">
-          <p>Home / {mockData[itemId].category}</p>
-          <h1>{mockData[itemId].name}</h1>
-          <h4>{mockData[itemId].price}</h4>
-          <select>
-            <option>Seleccione Talla</option>
-            <option>S</option>
-            <option>M</option>
-            <option>L</option>
-            <option>XL</option>
-          </select>
-          <a href="" className="btn">
-            {" "}
-            Add to cart{" "}
-          </a>
-          <h3>
-            {" "}
-            Detalles del producto <i className="fa fa-indent"></i>
-          </h3>
-          <p>{mockData[itemId].description}</p>
+        <h2 className="single-product-detail__name">{product.name}</h2>
+        <p className="single-product-detail__price">${product.price}</p>
+        <p className="single-product-detail__description">
+          {product.description}
+        </p>
+
+        <button
+          className="single-product-detail__add-to-cart-btn"
+          onClick={() => onAddToCart && onAddToCart(product)}
+          type="button"
+        >
+          Agregar al carrito
+        </button>
+
+        <div className="single-product-detail__large-description">
+          {product.largeDescription}
         </div>
       </div>
     </div>

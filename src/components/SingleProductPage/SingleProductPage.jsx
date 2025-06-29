@@ -7,7 +7,13 @@ export default function SingleProductPage() {
   const { id } = useParams();
   return (
     <div className="SingleProductPage">
-      <SingleProductDetail itemId={id} />
+      <SingleProductDetail
+        itemId={id}
+        onAddToCart={(product) => {
+          console.log("Agregar al carrito:", product);
+          // Aquí agregas lógica real para carrito
+        }}
+      />
     </div>
   );
 }
