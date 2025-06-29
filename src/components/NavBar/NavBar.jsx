@@ -10,7 +10,6 @@ const NavBar = () => {
     setShowCategories(!showCategories);
   };
 
-  // Cierra el dropdown si se hace clic fuera
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -22,69 +21,76 @@ const NavBar = () => {
     };
 
     document.addEventListener("mousedown", handleClickOutside);
-
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
   return (
-    <div className="NavBar">
-      <Link to={"/"}>
-        <img src="logo.jpg" alt="logo.jpg" className="NavBar__Logo" />
+    <nav className="NavBar">
+      <Link to="/" className="NavBar__LogoLink">
+        <img src="/logo.jpg" alt="Logo" className="NavBar__Logo" />
       </Link>
 
       <ul className="NavBar__List">
-        <Link to={"/"}>
-          <li className="NavBar__List__Item">Home</li>
-        </Link>
-        <Link to={"/AllProducts"}>
-          <li className="NavBar__List__Item">Products</li>
-        </Link>
+        <li className="NavBar__Item">
+          <Link to="/" className="NavBar__Link">
+            Home
+          </Link>
+        </li>
+        <li className="NavBar__Item">
+          <Link to="/AllProducts" className="NavBar__Link">
+            Products
+          </Link>
+        </li>
         <li
-          className="NavBar__List__Item"
+          className="NavBar__Item NavBar__Item--Dropdown"
           onClick={toggleCategories}
           ref={categoriesRef}
         >
-          Categories
+          <span className="NavBar__Link">Categories ▾</span>
           {showCategories && (
-            <ul className="Dropdown">
-              <Link to="/CategoryPage/Calzado">
-                <li>Calzado</li>
-              </Link>
-              <Link to="/CategoryPage/Ropa Deportiva">
-                <li>Ropa Deportiva</li>
-              </Link>
-              <Link to="/CategoryPage/Suplementos">
-                <li>Suplementos</li>
-              </Link>
-              <Link to="/CategoryPage/Accesorios">
-                <li>Accesorios</li>
-              </Link>
+            <ul className="NavBar__Dropdown">
+              <li>
+                <Link to="/CategoryPage/Calzado">Calzado</Link>
+              </li>
+              <li>
+                <Link to="/CategoryPage/Ropa Deportiva">Ropa Deportiva</Link>
+              </li>
+              <li>
+                <Link to="/CategoryPage/Suplementos">Suplementos</Link>
+              </li>
+              <li>
+                <Link to="/CategoryPage/Accesorios">Accesorios</Link>
+              </li>
             </ul>
           )}
         </li>
-        <Link to={"/AboutPage"}>
-          <li className="NavBar__List__Item">About</li>
-        </Link>
+        <li className="NavBar__Item">
+          <Link to="/AboutPage" className="NavBar__Link">
+            About
+          </Link>
+        </li>
       </ul>
 
-      <div className="SearchBox">
-        <input
-          type="text"
-          placeholder="Search..."
-          className="SearchBox__Text"
-        />
+      <div className="NavBar__Right">
+        <div className="NavBar__SearchBox">
+          <input
+            type="text"
+            className="NavBar__SearchInput"
+            placeholder="Buscar..."
+          />
+        </div>
+        <div className="NavBar__Cart">
+          <img
+            src="/icon_shoppingcart.png"
+            alt="Cart"
+            className="NavBar__CartIcon"
+          />
+          <span className="NavBar__CartCount">0</span>
+        </div>
       </div>
-      <div className="Cart">
-        <img
-          src="icon_shoppingcart.png"
-          alt="Cart"
-          className="NavBar__CartIcon"
-        />
-        <span className="CartCount">0</span>
-      </div>
-    </div>
+    </nav>
   );
 };
 

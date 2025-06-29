@@ -2,73 +2,116 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
-  color: black;
   padding: 15px 7%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .NavBar__Logo {
-  width: 80px;
-  cursor: pointer;
-  border-radius: 50px;
-  opacity: 0.5;
+  width: 60px;
+  border-radius: 50%;
+  opacity: 0.85;
+  transition: opacity 0.3s;
+}
+
+.NavBar__Logo:hover {
+  opacity: 1;
 }
 
 .NavBar__List {
-  flex: 1;
+  display: flex;
   list-style: none;
-  text-align: center;
-}
-.NavBar__List__Item {
-  display: inline-block;
-  margin: 10px 20px;
-  font-size: 30px;
-  cursor: pointer;
+  gap: 30px;
 }
 
-.SearchBox {
+.NavBar__Item {
+  position: relative;
+}
+
+.NavBar__Link {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.NavBar__Link:hover {
+  color: #ff6b6b;
+}
+
+.NavBar__Item--Dropdown:hover .NavBar__Dropdown {
+  display: block;
+}
+
+.NavBar__Dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 10;
+  min-width: 180px;
+}
+
+.NavBar__Dropdown li {
+  padding: 10px 20px;
+}
+
+.NavBar__Dropdown li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.NavBar__Dropdown li a:hover {
+  background-color: #f5f5f5;
+  color: #ff6b6b;
+}
+
+.NavBar__Right {
   display: flex;
   align-items: center;
-  background: #242424;
-  padding: 10px 20px;
-  border-radius: 50px;
+  gap: 20px;
 }
 
-.SearchBox__Text {
-  padding: 6px;
-  background: transparent;
-  border: 0;
-  outline: 0;
-  color: #fff;
-  font-size: 18px;
-  max-width: 200px;
-}
-
-.SearchBox__Text::placeholder {
-  color: #fff;
-}
-.NavBar__CartIcon {
-  width: 30px;
-  cursor: pointer;
-}
-.Dropdown {
-  position: absolute;
-  background-color: #fff;
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 100;
-}
-
-.Dropdown li {
-  padding: 10px 20px;
-  cursor: pointer;
-  white-space: nowrap;
-  color: #000;
-}
-
-.Dropdown li:hover {
+.NavBar__SearchBox {
   background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+
+.NavBar__SearchInput {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.NavBar__Cart {
+  position: relative;
+}
+
+.NavBar__CartIcon {
+  width: 28px;
+  cursor: pointer;
+}
+
+.NavBar__CartCount {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #ff6b6b;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
 }

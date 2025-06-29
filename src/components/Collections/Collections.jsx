@@ -23,7 +23,6 @@ const categories = [
 export default function Collections() {
   return (
     <div className="CollectionsWrapper">
-      <h1 className="Collections__Title">Categorias</h1>
       <div className="Collections__Row">
         {categories.map((category) => (
           <div key={category.name} className="Collections__Column">

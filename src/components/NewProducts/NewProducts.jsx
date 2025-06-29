@@ -1,40 +1,27 @@
-import Product from "../Product/Product.jsx";
+import React from "react";
 import "./NewProducts.css";
-import mockData from "../../../mockData.json";
-function NewProducts() {
+import Product from "../Product/Product.jsx";
+import mockData from "../../../mockData.json"; // Ajusta la ruta si es necesario
+
+export default function NewProducts() {
+  // Tomamos los 3-6 primeros productos como "nuevos"
+  const newItems = mockData.slice(0, 6);
+
   return (
-    <div className="NewProducts">
-      <h1 className="NewProducts__Text"> Productos Nuevos</h1>
-      <div className="NewProducts__Row">
-        <div className="NewProductsColumn">
-          <Product
-            itemName={mockData[0].name}
-            itemPrice={mockData[0].price}
-            itemImage={mockData[0].image}
-            itemDescription={mockData[0].description}
-            id={mockData[0].id}
-          />
-        </div>
-        <div className="NewProductsColumn">
-          <Product
-            itemName={mockData[1].name}
-            itemPrice={mockData[1].price}
-            itemImage={mockData[1].image}
-            itemDescription={mockData[1].description}
-            id={mockData[1].id}
-          />
-        </div>
-        <div className="NewProductsColumn">
-          <Product
-            itemName={mockData[2].name}
-            itemPrice={mockData[2].price}
-            itemImage={mockData[2].image}
-            itemDescription={mockData[2].description}
-            id={mockData[2].id}
-          />
-        </div>
+    <section className="NewProducts">
+      <div className="NewProducts__Grid">
+        {newItems.map((item) => (
+          <div key={item.id} className="NewProducts__Item">
+            <Product
+              itemName={item.name}
+              itemPrice={item.price}
+              itemImage={item.image}
+              itemDescription={item.description}
+              id={item.id}
+            />
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 }
-export default NewProducts;

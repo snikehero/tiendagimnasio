@@ -1,14 +1,16 @@
 .NewProducts {
-  background-color: #d0d0d0;
+  background-color: #f8f8f8;
+  padding: 60px 20px;
 }
-.NewProducts__Text {
-  text-align: center;
-  color: black;
-  font-size: 32px;
-  font-weight: bold;
+.NewProducts__Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.NewProducts__Row {
+
+.NewProducts__Item {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }

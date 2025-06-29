@@ -1,13 +1,30 @@
+.AllProductsPage {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 60px 20px;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
 .AllProductsPage__Title {
   text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
-.AllProducts__Container {
+
+.AllProductsPage__Subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+.AllProducts__Grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  padding: 2rem;
-}
-.EachProduct__Container {
-  height: 400px;
-  width: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }

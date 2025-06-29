@@ -3,21 +3,23 @@ import { Link } from "react-router";
 
 function Product({ itemName, itemPrice, itemImage, itemDescription, id }) {
   return (
-    <div className="Card">
+    <div className="ProductCard">
       <Link to={`/SingleProductPage/${id}`}>
-        <img src={itemImage} alt={itemName} className="Card__Image" />
+        <img src={itemImage} alt={itemName} className="ProductCard__Image" />
       </Link>
-      <div className="Card__Content">
-        <div className="Card__Row">
-          <div className="Card__Details">
-            <span>{itemName}</span>
-            <p>{itemDescription}</p>
+      <div className="ProductCard__Content">
+        <div className="ProductCard__Info">
+          <div className="ProductCard__Details">
+            <span className="ProductCard__Name">{itemName}</span>
+            <p className="ProductCard__Description">{itemDescription}</p>
           </div>
-          <div className="Card__Price">${itemPrice}</div>
+          <div className="ProductCard__Price">${itemPrice}</div>
         </div>
-        <div className="Card__Buttons">
-          <button className="Card__Buttons--ComprarAhora">Comprar Ahora</button>
-          <button className="Card__Buttons--AddToCart">
+        <div className="ProductCard__Buttons">
+          <button className="ProductCard__Button ProductCard__Button--Primary">
+            Comprar Ahora
+          </button>
+          <button className="ProductCard__Button ProductCard__Button--Secondary">
             Añadir al Carrito
           </button>
         </div>
