@@ -1,5 +1,7 @@
 import React from "react";
 import "./CollectionsButton.css";
+import "../CategoryPage/CategoryPage.jsx";
+import { Link } from "react-router";
 export default function CollectionButton({ collectionName, collectionImage }) {
   return (
     <div className="CollectionButtonWrapper">
@@ -8,7 +10,9 @@ export default function CollectionButton({ collectionName, collectionImage }) {
         alt={collectionName}
         className="CollectionButton__Image"
       />
-      <button className="CollectionButton__Button">{collectionName}</button>
+      <Link to={`/CategoryPage/${collectionName}`}>
+        <button className="CollectionButton__Button">{collectionName}</button>
+      </Link>
     </div>
   );
 }

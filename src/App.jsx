@@ -5,6 +5,7 @@ import About from "./components/AboutPage/About.jsx";
 import SingleProductPage from "./components/SingleProductPage/SingleProductPage.jsx";
 import AllProducts from "./components/AllProductsPage/AllProducts.jsx";
 import SharedLayout from "./components/SharedLayout/SharedLayout.jsx";
+import CategoryPage from "./components/CategoryPage/CategoryPage.jsx";
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +19,7 @@ function App() {
             element={<SingleProductPage />}
           />
           <Route path="/AllProducts" element={<AllProducts />} />
+          <Route path="/CategoryPage/:category" element={<CategoryPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

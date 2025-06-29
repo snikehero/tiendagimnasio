@@ -19,7 +19,7 @@ export default function Collections() {
         </div>
         <div className="Collections__Column">
           <CollectionButton
-            collectionName={"Straps"}
+            collectionName={"Ropa Deportiva"}
             collectionImage={"banner_straps_blackStraps.jpeg"}
           />
         </div>

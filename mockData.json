@@ -3,7 +3,7 @@
     "id": 0,
     "image": "../item_shoes_metcon9.png",
     "name": "Nike Metcon 9",
-    "category": "Tenis",
+    "category": "Calzado",
     "price": 224,
     "description": "Unos tenis chulos"
   },
@@ -11,7 +11,7 @@
     "id": 1,
     "image": "../item_tshirt_playeranegra.png",
     "name": "Playera Negra",
-    "category": "Playeras",
+    "category": "Ropa Deportiva",
     "price": 123,
     "description": "Una playera negra"
   },
@@ -19,7 +19,7 @@
     "id": 2,
     "image": "../item_protein_cbum.webp",
     "name": "Proteina CBUM",
-    "category": "Proteina",
+    "category": "Suplementos",
     "price": 111,
     "description": "Proteina de la mas alta calidad"
   },
@@ -27,8 +27,8 @@
     "id": 3,
     "image": "../item_socks_blueSocks.jpg",
     "name": "Calcetines Azules",
-    "category": "Calcetines",
-    "Price": 10,
+    "category": "Calzado",
+    "price": 10,
     "description": "Calcetines baratos"
   },
   {
@@ -51,7 +51,7 @@
     "id": 6,
     "image": "../placeholder.jpg",
     "name": "Nike ReactX",
-    "category": "Tenis",
+    "category": "Calzado",
     "price": 199,
     "description": "Tenis ligeros con buena amortiguación"
   },
@@ -59,7 +59,7 @@
     "id": 7,
     "image": "../placeholder.jpg",
     "name": "Playera Roja",
-    "category": "Playeras",
+    "category": "Ropa Deportiva",
     "price": 119,
     "description": "Playera deportiva color rojo"
   },
@@ -75,7 +75,7 @@
     "id": 9,
     "image": "../placeholder.jpg",
     "name": "Proteína ISO100",
-    "category": "Proteina",
+    "category": "Suplementos",
     "price": 139,
     "description": "Aislado de suero para recuperación muscular"
   },
@@ -83,7 +83,7 @@
     "id": 10,
     "image": "../placeholder.jpg",
     "name": "Calcetines Negros",
-    "category": "Calcetines",
+    "category": "Calzado",
     "price": 12,
     "description": "Calcetines deportivos transpirables"
   },
