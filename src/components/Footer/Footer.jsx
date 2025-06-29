@@ -33,7 +33,7 @@ export default function Footer() {
               <li className="FooterNav__List__Item">Home</li>
             </Link>
             <Link to={"/AllProducts"}>
-              <li className="FooterNav__List__Item">Products</li>
+              <li className="FooterNav__List__Item">Productos</li>
             </Link>
             <Link to={"/AboutPage"}>
               <li className="FooterNav__List__Item">About</li>

@@ -1,6 +1,7 @@
 import React from "react";
 import Collections from "../Collections/Collections.jsx";
 import NewProducts from "../NewProducts/NewProducts.jsx";
+import Cart from "../Cart/Cart.jsx";
 import "./MainPage.css"; // crea un CSS específico para esto
 
 export default function MainPage() {

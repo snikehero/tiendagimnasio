@@ -1,7 +1,24 @@
+import React, { useContext } from "react";
+import { CartContext } from "../../context/CartContext.jsx";
 import "./Product.css";
 import { Link } from "react-router";
 
-function Product({ itemName, itemPrice, itemImage, itemDescription, id }) {
+export default function Product({
+  itemName,
+  itemPrice,
+  itemImage,
+  itemDescription,
+  id,
+}) {
+  const { addToCart } = useContext(CartContext);
+
+  const product = {
+    id,
+    name: itemName,
+    price: itemPrice,
+    image: itemImage,
+    description: itemDescription,
+  };
   return (
     <div className="ProductCard">
       <Link to={`/SingleProductPage/${id}`}>
@@ -19,7 +36,10 @@ function Product({ itemName, itemPrice, itemImage, itemDescription, id }) {
           <button className="ProductCard__Button ProductCard__Button--Primary">
             Comprar Ahora
           </button>
-          <button className="ProductCard__Button ProductCard__Button--Secondary">
+          <button
+            className="ProductCard__Button ProductCard__Button--Secondary"
+            onClick={() => addToCart(product)}
+          >
             Añadir al Carrito
           </button>
         </div>
@@ -27,5 +47,3 @@ function Product({ itemName, itemPrice, itemImage, itemDescription, id }) {
     </div>
   );
 }
-
-export default Product;

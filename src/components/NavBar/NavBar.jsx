@@ -1,8 +1,12 @@
 import "./NavBar.css";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useContext } from "react";
 import { Link } from "react-router";
-
+import { CartContext } from "../../context/CartContext"; // Ajusta la ruta según tu estructura
 const NavBar = () => {
+  const { cartItems } = useContext(CartContext);
+
+  // Suma todas las cantidades de los productos en el carrito
+  const totalQuantity = cartItems.reduce((acc, item) => acc + item.quantity, 0);
   const [showCategories, setShowCategories] = useState(false);
   const categoriesRef = useRef(null);
 
@@ -40,7 +44,7 @@ const NavBar = () => {
         </li>
         <li className="NavBar__Item">
           <Link to="/AllProducts" className="NavBar__Link">
-            Products
+            Productos
           </Link>
         </li>
         <li
@@ -48,7 +52,7 @@ const NavBar = () => {
           onClick={toggleCategories}
           ref={categoriesRef}
         >
-          <span className="NavBar__Link">Categories ▾</span>
+          <span className="NavBar__Link">Categorias ▾</span>
           {showCategories && (
             <ul className="NavBar__Dropdown">
               <li>
@@ -71,6 +75,11 @@ const NavBar = () => {
             About
           </Link>
         </li>
+        <li className="NavBar__Item">
+          <Link to="/aaaa" className="NavBar__Link">
+            Pagina de Error
+          </Link>
+        </li>
       </ul>
 
       <div className="NavBar__Right">
@@ -82,12 +91,16 @@ const NavBar = () => {
           />
         </div>
         <div className="NavBar__Cart">
-          <img
-            src="/icon_shoppingcart.png"
-            alt="Cart"
-            className="NavBar__CartIcon"
-          />
-          <span className="NavBar__CartCount">0</span>
+          <Link to="/Cart">
+            <img
+              src="/icon_shoppingcart.png"
+              alt="Cart"
+              className="NavBar__CartIcon"
+            />
+          </Link>
+          {totalQuantity > 0 && (
+            <span className="NavBar__CartCount">{totalQuantity}</span>
+          )}
         </div>
       </div>
     </nav>

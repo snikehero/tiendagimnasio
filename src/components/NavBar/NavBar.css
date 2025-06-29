@@ -98,20 +98,22 @@
 
 .NavBar__Cart {
   position: relative;
+  cursor: pointer;
 }
 
 .NavBar__CartIcon {
   width: 28px;
   cursor: pointer;
 }
-
 .NavBar__CartCount {
   position: absolute;
   top: -6px;
-  right: -10px;
-  background: #ff6b6b;
+  right: -6px;
+  background-color: #ff6b6b;
   color: white;
   font-size: 12px;
-  padding: 2px 6px;
+  padding: 3px 7px;
   border-radius: 50%;
+  font-weight: bold;
+  user-select: none;
 }
