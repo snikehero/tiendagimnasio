@@ -1,8 +1,10 @@
 import mockData from "../../../mockData.json";
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 import "./SingleProductDetail.css";
 
-export default function SingleProductDetail({ itemId, onAddToCart }) {
+export default function SingleProductDetail({ itemId }) {
+  const { addToCart } = useContext(CartContext);
   if (itemId === undefined || itemId === null || !mockData[itemId])
     return <p>Producto no encontrado.</p>;
 
@@ -29,7 +31,7 @@ export default function SingleProductDetail({ itemId, onAddToCart }) {
 
         <button
           className="single-product-detail__add-to-cart-btn"
-          onClick={() => onAddToCart && onAddToCart(product)}
+          onClick={() => addToCart(product)}
           type="button"
         >
           Agregar al carrito
