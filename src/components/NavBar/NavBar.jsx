@@ -1,13 +1,16 @@
 import "./NavBar.css";
 import React, { useState, useRef, useEffect, useContext } from "react";
 import { Link } from "react-router";
-import { CartContext } from "../../context/CartContext"; // Ajusta la ruta según tu estructura
-const NavBar = () => {
-  const { cartItems } = useContext(CartContext);
+import { CartContext } from "../../context/CartContext";
+import { useDebounce } from "../../Hooks/useDebounce"; // Ajusta ruta
 
-  // Suma todas las cantidades de los productos en el carrito
+const NavBar = ({ onSearch }) => {
+  const { cartItems } = useContext(CartContext);
   const totalQuantity = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+
   const [showCategories, setShowCategories] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+  const debouncedSearchTerm = useDebounce(searchTerm, 500);
   const categoriesRef = useRef(null);
 
   const toggleCategories = () => {
@@ -29,6 +32,13 @@ const NavBar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  // Emitir el término de búsqueda debounced hacia el padre solo si existe onSearch
+  useEffect(() => {
+    if (onSearch) {
+      onSearch(debouncedSearchTerm);
+    }
+  }, [debouncedSearchTerm, onSearch]);
 
   return (
     <nav className="NavBar">
@@ -88,6 +98,8 @@ const NavBar = () => {
             type="text"
             className="NavBar__SearchInput"
             placeholder="Buscar..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
         <div className="NavBar__Cart">
