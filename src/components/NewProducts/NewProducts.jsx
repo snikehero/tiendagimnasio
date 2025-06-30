@@ -1,7 +1,7 @@
 import React from "react";
 import "./NewProducts.css";
 import Product from "../Product/Product.jsx";
-import mockData from "../../../mockData.json"; // Ajusta la ruta si es necesario
+import mockData from "../../../mockData.json";
 
 export default function NewProducts() {
   // Tomamos los 3-6 primeros productos como "nuevos"

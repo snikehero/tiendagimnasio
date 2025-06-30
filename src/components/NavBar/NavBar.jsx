@@ -2,7 +2,7 @@ import "./NavBar.css";
 import React, { useState, useRef, useEffect, useContext } from "react";
 import { Link } from "react-router";
 import { CartContext } from "../../context/CartContext";
-import { useDebounce } from "../../Hooks/useDebounce"; // Ajusta ruta
+import { useDebounce } from "../../Hooks/useDebounce";
 
 const NavBar = ({ onSearch }) => {
   const { cartItems } = useContext(CartContext);

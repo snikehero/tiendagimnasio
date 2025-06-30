@@ -37,7 +37,7 @@
   },
   {
     "id": 4,
-    "image": "../placeholder.jpg",
+    "image": "../item_guantes_gymgrip.webp",
     "name": "Guantes GymGrip",
     "category": "Accesorios",
     "price": 45,
@@ -46,7 +46,7 @@
   },
   {
     "id": 5,
-    "image": "../placeholder.jpg",
+    "image": "../item_accesorios_shakerironmix.webp",
     "name": "Shaker IronMix",
     "category": "Accesorios",
     "price": 25,
@@ -55,7 +55,7 @@
   },
   {
     "id": 6,
-    "image": "../placeholder.jpg",
+    "image": "../item_calzado_nikereactx.jpeg",
     "name": "Nike ReactX",
     "category": "Calzado",
     "price": 199,
@@ -64,7 +64,7 @@
   },
   {
     "id": 7,
-    "image": "../placeholder.jpg",
+    "image": "../item_ropa_playeraroja.webp",
     "name": "Playera Roja",
     "category": "Ropa Deportiva",
     "price": 119,
@@ -73,7 +73,7 @@
   },
   {
     "id": 8,
-    "image": "../placeholder.jpg",
+    "image": "../item_accesorios_cinturonpowerlifting.jpeg",
     "name": "Cinturón Powerlifting",
     "category": "Accesorios",
     "price": 75,
@@ -82,7 +82,7 @@
   },
   {
     "id": 9,
-    "image": "../placeholder.jpg",
+    "image": "../item_suplementos_proteinaiso100.jpg",
     "name": "Proteína ISO100",
     "category": "Suplementos",
     "price": 139,
@@ -91,7 +91,7 @@
   },
   {
     "id": 10,
-    "image": "../placeholder.jpg",
+    "image": "../item_calzado_calcetinesnegros.webp",
     "name": "Calcetines Negros",
     "category": "Calzado",
     "price": 12,
@@ -100,7 +100,7 @@
   },
   {
     "id": 11,
-    "image": "../placeholder.jpg",
+    "image": "../item_ropa_shortsgymflex.jpeg",
     "name": "Shorts GymFlex",
     "category": "Ropa Deportiva",
     "price": 89,
@@ -109,7 +109,7 @@
   },
   {
     "id": 12,
-    "image": "../placeholder.jpg",
+    "image": "../item_calzado_pumafuse.jpg",
     "name": "Tenis Puma Fuse",
     "category": "Calzado",
     "price": 210,
@@ -118,7 +118,7 @@
   },
   {
     "id": 13,
-    "image": "../placeholder.jpg",
+    "image": "../item_ropa_tanktopdryfit.jpg",
     "name": "Tank Top DryFit",
     "category": "Ropa Deportiva",
     "price": 99,
@@ -127,7 +127,7 @@
   },
   {
     "id": 14,
-    "image": "../placeholder.jpg",
+    "image": "../item_suplementos_proteinavegana.webp",
     "name": "Proteína Vegana Orgánica",
     "category": "Suplementos",
     "price": 130,
@@ -136,7 +136,7 @@
   },
   {
     "id": 15,
-    "image": "../placeholder.jpg",
+    "image": "../item_accesorios_muñequerasprogrip.jpg",
     "name": "Muñequeras ProGrip",
     "category": "Accesorios",
     "price": 35,
@@ -145,7 +145,7 @@
   },
   {
     "id": 16,
-    "image": "../placeholder.jpg",
+    "image": "../item_calzado_nikezoomsuperrep.jpg",
     "name": "Nike Air Zoom SuperRep",
     "category": "Calzado",
     "price": 230,
@@ -154,7 +154,7 @@
   },
   {
     "id": 17,
-    "image": "../placeholder.jpg",
+    "image": "../item_ropa_legginscompresivos.jpg",
     "name": "Leggings Compresivos",
     "category": "Ropa Deportiva",
     "price": 110,
@@ -163,7 +163,7 @@
   },
   {
     "id": 18,
-    "image": "../placeholder.jpg",
+    "image": "../item_suplementos_preentreno.webp",
     "name": "Pre-Entreno Explosivo",
     "category": "Suplementos",
     "price": 85,
@@ -172,7 +172,7 @@
   },
   {
     "id": 19,
-    "image": "../placeholder.jpg",
+    "image": "../item_accesorios_cuerdaparasaltar.jpg",
     "name": "Cuerda para Saltar SpeedPro",
     "category": "Accesorios",
     "price": 22,

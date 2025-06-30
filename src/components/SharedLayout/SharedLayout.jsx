@@ -29,7 +29,7 @@ export default function SharedLayout() {
     <>
       {message && <Notification message={message} />}
       <NavBar onSearch={handleSearch} />
-      {/* Pasar searchTerm por contexto, prop o URL según tu arquitectura */}
+      {}
       <Outlet context={{ searchTerm }} />
       <Footer />
     </>

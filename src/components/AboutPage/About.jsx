@@ -17,9 +17,8 @@ export default function About() {
           </blockquote>
           <h3 className="About__Name">Moises Sanchez</h3>
           <p className="About__Description">
-            Soy un profesional dedicado a ofrecer productos deportivos de alta
-            calidad que inspiran bienestar y estilo. Me apasiona ayudar a mis
-            clientes a encontrar lo mejor para su entrenamiento y vida diaria.
+            Desarrollador actualmente estudiando una Maestria en UNIR, esta
+            pagina web es para una clase de desarrollo web
           </p>
         </div>
       </div>
