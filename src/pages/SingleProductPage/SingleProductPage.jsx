@@ -1,4 +1,4 @@
-import SingleProductDetail from "../SingleProductDetail/SingleProductDetail";
+import SingleProductDetail from "../../components/SingleProductDetail/SingleProductDetail";
 import { useParams } from "react-router";
 
 export default function SingleProductPage() {

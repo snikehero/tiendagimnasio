@@ -1,5 +1,5 @@
 import React from "react";
-import NewProducts from "../NewProducts/NewProducts.jsx";
+import NewProducts from "../../components/NewProducts/NewProducts.jsx";
 import "./MainPage.css"; // crea un CSS específico para esto
 
 export default function MainPage() {

@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { Outlet } from "react-router";
-import NavBar from "../NavBar/NavBar";
-import Footer from "../Footer/Footer";
-import Notification from "../Notifications/Notification";
+import NavBar from "../../components/NavBar/NavBar";
+import Footer from "../../components/Footer/Footer";
+import Notification from "../../components/Notifications/Notification";
 import { CartContext } from "../../context/CartContext";
 
 export default function SharedLayout() {

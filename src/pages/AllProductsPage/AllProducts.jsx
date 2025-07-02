@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { useOutletContext } from "react-router";
-import Product from "../Product/Product.jsx";
+import Product from "../../components/Product/Product.jsx";
 import mockData from "../../../mockData.json";
 import "./AllProducts.css";
 

@@ -1,11 +1,11 @@
-import MainPage from "./components/MainPage/MainPage.jsx";
+import MainPage from "./pages/MainPage/MainPage.jsx";
 import { BrowserRouter, Routes, Route } from "react-router";
-import NotFoundPage from "./components/NotFoundPage/NotFoundPage.jsx";
-import About from "./components/AboutPage/About.jsx";
-import SingleProductPage from "./components/SingleProductPage/SingleProductPage.jsx";
-import AllProducts from "./components/AllProductsPage/AllProducts.jsx";
-import SharedLayout from "./components/SharedLayout/SharedLayout.jsx";
-import Cart from "./components/Cart/Cart.jsx";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage.jsx";
+import About from "./pages/AboutPage/About.jsx";
+import SingleProductPage from "./pages/SingleProductPage/SingleProductPage.jsx";
+import AllProducts from "./pages/AllProductsPage/AllProducts.jsx";
+import SharedLayout from "./pages/SharedLayout/SharedLayout.jsx";
+import Cart from "./pages/Cart/Cart.jsx";
 function App() {
   return (
     <BrowserRouter>
