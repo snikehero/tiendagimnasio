@@ -1,5 +1,5 @@
 import "./NavBar.css";
-import React, { useState, useRef, useEffect, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router";
 import { CartContext } from "../../context/CartContext";
 import { useDebounce } from "../../Hooks/useDebounce";
@@ -7,33 +7,8 @@ import { useDebounce } from "../../Hooks/useDebounce";
 const NavBar = ({ onSearch }) => {
   const { cartItems } = useContext(CartContext);
   const totalQuantity = cartItems.reduce((acc, item) => acc + item.quantity, 0);
-
-  const [showCategories, setShowCategories] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const debouncedSearchTerm = useDebounce(searchTerm, 500);
-  const categoriesRef = useRef(null);
-
-  const toggleCategories = () => {
-    setShowCategories(!showCategories);
-  };
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        categoriesRef.current &&
-        !categoriesRef.current.contains(event.target)
-      ) {
-        setShowCategories(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
-  // Emitir el término de búsqueda debounced hacia el padre solo si existe onSearch
   useEffect(() => {
     if (onSearch) {
       onSearch(debouncedSearchTerm);
@@ -54,31 +29,8 @@ const NavBar = ({ onSearch }) => {
         </li>
         <li className="NavBar__Item">
           <Link to="/AllProducts" className="NavBar__Link">
-            Productos
+            Todos los Productos
           </Link>
-        </li>
-        <li
-          className="NavBar__Item NavBar__Item--Dropdown"
-          onClick={toggleCategories}
-          ref={categoriesRef}
-        >
-          <span className="NavBar__Link">Categorias ▾</span>
-          {showCategories && (
-            <ul className="NavBar__Dropdown">
-              <li>
-                <Link to="/CategoryPage/Calzado">Calzado</Link>
-              </li>
-              <li>
-                <Link to="/CategoryPage/Ropa Deportiva">Ropa Deportiva</Link>
-              </li>
-              <li>
-                <Link to="/CategoryPage/Suplementos">Suplementos</Link>
-              </li>
-              <li>
-                <Link to="/CategoryPage/Accesorios">Accesorios</Link>
-              </li>
-            </ul>
-          )}
         </li>
         <li className="NavBar__Item">
           <Link to="/AboutPage" className="NavBar__Link">

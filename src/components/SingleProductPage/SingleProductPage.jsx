@@ -1,4 +1,3 @@
-import React from "react";
 import SingleProductDetail from "../SingleProductDetail/SingleProductDetail";
 import { useParams } from "react-router";
 

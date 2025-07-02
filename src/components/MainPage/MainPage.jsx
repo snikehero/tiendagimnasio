@@ -1,7 +1,5 @@
 import React from "react";
-import Collections from "../Collections/Collections.jsx";
 import NewProducts from "../NewProducts/NewProducts.jsx";
-import Cart from "../Cart/Cart.jsx";
 import "./MainPage.css"; // crea un CSS específico para esto
 
 export default function MainPage() {
@@ -21,12 +19,6 @@ export default function MainPage() {
         <h2 className="MainPage__Title">Nuevos Productos</h2>
         <NewProducts />
       </section>
-
-      <section className="MainPage__Section">
-        <h2 className="MainPage__Title">Categorías</h2>
-        <Collections />
-      </section>
-
       <section className="MainPage__Section MainPage__Benefits">
         <div className="MainPage__BenefitItem">🚚 Envío gratis</div>
         <div className="MainPage__BenefitItem">🔒 Pago seguro</div>

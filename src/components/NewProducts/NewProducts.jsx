@@ -1,4 +1,3 @@
-import React from "react";
 import "./NewProducts.css";
 import Product from "../Product/Product.jsx";
 import mockData from "../../../mockData.json";

@@ -1,5 +1,5 @@
 import mockData from "../../../mockData.json";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import "./SingleProductDetail.css";
 
