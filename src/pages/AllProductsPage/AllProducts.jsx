@@ -1,24 +1,47 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { useOutletContext } from "react-router";
 import Product from "../../components/Product/Product.jsx";
-import mockData from "../../../mockData.json";
 import "./AllProducts.css";
 
 export default function AllProducts() {
   const { searchTerm } = useOutletContext() || { searchTerm: "" };
   const [selectedCategory, setSelectedCategory] = useState("Todos");
   const [sortOrder, setSortOrder] = useState("default");
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  const categories = [
-    "Todos",
-    ...new Set(mockData.map((item) => item.category)),
-  ];
+  // Cargar productos desde el backend
+  useEffect(() => {
+    fetch("http://localhost:8080/api/productos")
+      .then((res) => {
+        if (!res.ok) throw new Error("Error al cargar productos");
+        return res.json();
+      })
+      .then((data) => {
+        setProducts(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
 
+  // Obtener categorías dinámicamente según productos cargados
+  const categories = React.useMemo(() => {
+    if (!products.length) return ["Todos"];
+    return ["Todos", ...new Set(products.map((item) => item.category))];
+  }, [products]);
+
+  // Filtrado, búsqueda y ordenamiento
   const filteredProducts = useMemo(() => {
+    if (loading || error) return [];
+
     let filtered =
       selectedCategory === "Todos"
-        ? [...mockData]
-        : mockData.filter((item) => item.category === selectedCategory);
+        ? [...products]
+        : products.filter((item) => item.category === selectedCategory);
 
     if (searchTerm.trim() !== "") {
       filtered = filtered.filter((item) =>
@@ -33,7 +56,10 @@ export default function AllProducts() {
     }
 
     return filtered;
-  }, [selectedCategory, sortOrder, searchTerm]);
+  }, [selectedCategory, sortOrder, searchTerm, products, loading, error]);
+
+  if (loading) return <p>Cargando productos...</p>;
+  if (error) return <p>Error: {error}</p>;
 
   return (
     <div className="AllProductsPage">
