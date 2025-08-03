@@ -1,14 +1,33 @@
-import mockData from "../../../mockData.json";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import "./SingleProductDetail.css";
 
 export default function SingleProductDetail({ itemId }) {
   const { addToCart } = useContext(CartContext);
-  if (itemId === undefined || itemId === null || !mockData[itemId])
-    return <p>Producto no encontrado.</p>;
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  const product = mockData[itemId];
+  useEffect(() => {
+    if (itemId !== undefined && itemId !== null) {
+      fetch(`http://localhost:8080/api/productos/${itemId}`)
+        .then((res) => {
+          if (!res.ok) throw new Error("Producto no encontrado");
+          return res.json();
+        })
+        .then((data) => {
+          setProduct(data);
+          setLoading(false);
+        })
+        .catch((error) => {
+          console.error(error);
+          setProduct(null);
+          setLoading(false);
+        });
+    }
+  }, [itemId]);
+
+  if (loading) return <p>Cargando producto...</p>;
+  if (!product) return <p>Producto no encontrado.</p>;
 
   return (
     <div className="single-product-detail">
