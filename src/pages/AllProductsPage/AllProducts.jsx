@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import { useOutletContext } from "react-router";
 import Product from "../../components/Product/Product.jsx";
 import "./AllProducts.css";
-const API_URL = "https://eureka-production-06b8.up.railway.app";
+const API_URL = "https://gateway-production-b320.up.railway.app";
 export default function AllProducts() {
   const { searchTerm } = useOutletContext() || { searchTerm: "" };
   const [selectedCategory, setSelectedCategory] = useState("Todos");
