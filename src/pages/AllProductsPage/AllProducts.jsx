@@ -4,6 +4,7 @@ import Product from "../../components/Product/Product.jsx";
 import "./AllProducts.css";
 
 export default function AllProducts() {
+  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:8082";
   const { searchTerm } = useOutletContext() || { searchTerm: "" };
   const [selectedCategory, setSelectedCategory] = useState("Todos");
   const [sortOrder, setSortOrder] = useState("default");
@@ -12,7 +13,7 @@ export default function AllProducts() {
   const [error, setError] = useState(null);
   // Cargar productos desde la API
   useEffect(() => {
-    fetch("http://localhost:8082/api/productos")
+    fetch(`${API_URL}/api/productos`)
       .then((res) => {
         if (!res.ok) throw new Error("Error al cargar productos");
         return res.json();
