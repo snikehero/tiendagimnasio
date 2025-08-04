@@ -22,7 +22,7 @@ export default function SearchResults() {
       setError(null);
 
       fetch(
-        `http://localhost:8082/api/productos/search?name=${encodeURIComponent(
+        `https://gateway-production-b320.up.railway.app/api/productos/search?name=${encodeURIComponent(
           query
         )}`
       )

@@ -25,7 +25,7 @@ export default function AddProduct() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:8082/api/productos", {
+      const res = await fetch("https://gateway-production-b320.up.railway.app/api/productos", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

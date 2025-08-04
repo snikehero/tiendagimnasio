@@ -6,7 +6,7 @@ export default function NewProducts() {
   const [newItems, setNewItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8082/api/productos")
+    fetch("https://gateway-production-b320.up.railway.app/api/productos")
       .then((res) => res.json())
       .then((data) => {
         const primerosSeis = data.content.slice(0, 6);

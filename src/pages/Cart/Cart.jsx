@@ -26,7 +26,7 @@ export default function Cart() {
     };
 
     try {
-      const response = await fetch("http://localhost:8082/api/operaciones", {
+      const response = await fetch("https://gateway-production-b320.up.railway.app/api/operaciones", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

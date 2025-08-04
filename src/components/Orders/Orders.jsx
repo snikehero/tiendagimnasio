@@ -9,7 +9,7 @@ export default function Orders() {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const res = await fetch("http://localhost:8082/api/operaciones");
+        const res = await fetch("https://gateway-production-b320.up.railway.app/api/operaciones");
         if (!res.ok) throw new Error("Error al cargar las órdenes");
         const data = await res.json();
         setOrders(data);
