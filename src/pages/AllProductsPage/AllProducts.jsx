@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import { useOutletContext } from "react-router";
 import Product from "../../components/Product/Product.jsx";
 import "./AllProducts.css";
-const API_URL = import.meta.env.API_URL || "http://localhost:8082";
+const API_URL = import.meta.env.API_URL || "http://localhost:8083";
 export default function AllProducts() {
   const { searchTerm } = useOutletContext() || { searchTerm: "" };
   const [selectedCategory, setSelectedCategory] = useState("Todos");
