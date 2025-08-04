@@ -6,6 +6,8 @@ import SingleProductPage from "./pages/SingleProductPage/SingleProductPage.jsx";
 import AllProducts from "./pages/AllProductsPage/AllProducts.jsx";
 import SharedLayout from "./pages/SharedLayout/SharedLayout.jsx";
 import Cart from "./pages/Cart/Cart.jsx";
+import Orders from "./components/Orders/Orders.jsx";
+import AddProduct from "./components/AddProduct/AddProduct.jsx";
 function App() {
   return (
     <BrowserRouter>
@@ -14,12 +16,14 @@ function App() {
           <Route index element={<MainPage />} />
           <Route path="/AboutPage" element={<About />} />
           <Route path="/*" element={<NotFoundPage />} />
+          <Route path="/ordenes" element={<Orders />} />
           <Route
             path="/SingleProductPage/:id"
             element={<SingleProductPage />}
           />
           <Route path="/AllProducts" element={<AllProducts />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/AddProduct" element={<AddProduct />} />
         </Route>
       </Routes>
     </BrowserRouter>

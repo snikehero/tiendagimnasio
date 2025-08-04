@@ -1,0 +1,46 @@
+.SearchResultsContainer {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.SearchResultsInput {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.SearchResultsDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.SearchResultsDropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.SearchResultsDropdown li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.SearchResultsDropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+.Error {
+  color: red;
+  padding: 8px 12px;
+}

@@ -1,19 +1,12 @@
 import "./NavBar.css";
-import { useState, useEffect, useContext } from "react";
+import { useContext } from "react";
 import { Link } from "react-router";
 import { CartContext } from "../../context/CartContext";
-import { useDebounce } from "../../Hooks/useDebounce";
+import SearchResults from "../SearchResults/SearchResults"; // Ajusta la ruta si es diferente
 
-const NavBar = ({ onSearch }) => {
+const NavBar = () => {
   const { cartItems } = useContext(CartContext);
   const totalQuantity = cartItems.reduce((acc, item) => acc + item.quantity, 0);
-  const [searchTerm, setSearchTerm] = useState("");
-  const debouncedSearchTerm = useDebounce(searchTerm, 500);
-  useEffect(() => {
-    if (onSearch) {
-      onSearch(debouncedSearchTerm);
-    }
-  }, [debouncedSearchTerm, onSearch]);
 
   return (
     <nav className="NavBar">
@@ -42,17 +35,21 @@ const NavBar = ({ onSearch }) => {
             Pagina de Error
           </Link>
         </li>
+        <li className="NavBar__Item">
+          <Link to="/ordenes" className="NavBar__Link">
+            Ordenes
+          </Link>
+        </li>
+        <li className="NavBar__Item">
+          <Link to="/AddProduct" className="NavBar__Link">
+            Agregar Producto
+          </Link>
+        </li>
       </ul>
 
       <div className="NavBar__Right">
         <div className="NavBar__SearchBox">
-          <input
-            type="text"
-            className="NavBar__SearchInput"
-            placeholder="Buscar..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
+          <SearchResults />
         </div>
         <div className="NavBar__Cart">
           <Link to="/Cart">

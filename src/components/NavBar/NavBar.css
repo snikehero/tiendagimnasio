@@ -117,3 +117,82 @@
   font-weight: bold;
   user-select: none;
 }
+
+.NavBar__SearchBox {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 5px 15px;
+  position: relative; /* para posicionar dropdown */
+  width: 250px; /* o ajusta según convenga */
+}
+
+.SearchResultsInput {
+  border: none !important; /* elimina borde */
+  outline: none !important; /* elimina outline al hacer focus */
+  background: transparent;
+  font-size: 16px;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  cursor: text;
+  -webkit-appearance: none; /* para navegadores WebKit */
+  -moz-appearance: none; /* para Firefox */
+  appearance: none;
+}
+
+/* Dropdown resultados */
+.SearchResultsDropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 9999;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Lista interna del dropdown */
+.SearchResultsDropdown ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Cada item */
+.SearchResultsDropdown li {
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+/* Hover en item */
+.SearchResultsDropdown li:hover {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+/* Imagen del producto en dropdown */
+.SearchResultsDropdown img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Mensajes de error o carga */
+.Error {
+  color: red;
+  padding: 10px 15px;
+  font-weight: 600;
+}

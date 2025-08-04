@@ -10,6 +10,42 @@ export default function Cart() {
     0
   );
 
+  const handleCheckout = async () => {
+    if (cartItems.length === 0) {
+      alert("Tu carrito está vacío.");
+      return;
+    }
+
+    // Armar el payload según OperacionDTO que espera el backend
+    const payload = {
+      tipo: "compra", // o puedes hacer dinámico si hay otros tipos
+      productos: cartItems.map((item) => ({
+        productoId: item.id,
+        cantidad: item.quantity,
+      })),
+    };
+
+    try {
+      const response = await fetch("http://localhost:8082/api/operaciones", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (response.ok) {
+        alert("Compra registrada exitosamente!");
+        clearCart(); // Vacía el carrito
+      } else {
+        const errorData = await response.json();
+        alert("Error al registrar compra: " + errorData);
+      }
+    } catch (error) {
+      alert("Error en la comunicación con el servidor: " + error.message);
+    }
+  };
+
   return (
     <div className="CartPage">
       <h1 className="CartPage__Title">Tu Carrito de Compras</h1>
@@ -50,7 +86,9 @@ export default function Cart() {
             <button className="CartPage__ClearBtn" onClick={clearCart}>
               Vaciar Carrito
             </button>
-            <button className="CartPage__CheckoutBtn">Finalizar Compra</button>
+            <button className="CartPage__CheckoutBtn" onClick={handleCheckout}>
+              Finalizar Compra
+            </button>
           </div>
         </>
       )}

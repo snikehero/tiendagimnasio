@@ -10,16 +10,15 @@ export default function AllProducts() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
-  // Cargar productos desde el backend
+  // Cargar productos desde la API
   useEffect(() => {
-    fetch("http://localhost:8080/api/productos")
+    fetch("http://localhost:8082/api/productos")
       .then((res) => {
         if (!res.ok) throw new Error("Error al cargar productos");
         return res.json();
       })
       .then((data) => {
-        setProducts(data);
+        setProducts(data.content);
         setLoading(false);
       })
       .catch((err) => {

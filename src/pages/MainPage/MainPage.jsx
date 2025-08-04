@@ -19,6 +19,7 @@ export default function MainPage() {
         <h2 className="MainPage__Title">Nuevos Productos</h2>
         <NewProducts />
       </section>
+
       <section className="MainPage__Section MainPage__Benefits">
         <div className="MainPage__BenefitItem">🚚 Envío gratis</div>
         <div className="MainPage__BenefitItem">🔒 Pago seguro</div>

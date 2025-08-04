@@ -6,10 +6,10 @@ export default function NewProducts() {
   const [newItems, setNewItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/productos")
+    fetch("http://localhost:8082/api/productos")
       .then((res) => res.json())
       .then((data) => {
-        const primerosSeis = data.slice(0, 6);
+        const primerosSeis = data.content.slice(0, 6);
         setNewItems(primerosSeis);
       })
       .catch((error) => console.error("Error al cargar productos:", error));

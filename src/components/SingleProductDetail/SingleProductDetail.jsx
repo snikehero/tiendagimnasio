@@ -9,7 +9,7 @@ export default function SingleProductDetail({ itemId }) {
 
   useEffect(() => {
     if (itemId !== undefined && itemId !== null) {
-      fetch(`http://localhost:8080/api/productos/${itemId}`)
+      fetch(`http://localhost:8082/api/productos/${itemId}`)
         .then((res) => {
           if (!res.ok) throw new Error("Producto no encontrado");
           return res.json();
