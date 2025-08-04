@@ -2,9 +2,8 @@ import React, { useState, useEffect, useMemo } from "react";
 import { useOutletContext } from "react-router";
 import Product from "../../components/Product/Product.jsx";
 import "./AllProducts.css";
-
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8082";
 export default function AllProducts() {
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:8082";
   const { searchTerm } = useOutletContext() || { searchTerm: "" };
   const [selectedCategory, setSelectedCategory] = useState("Todos");
   const [sortOrder, setSortOrder] = useState("default");
