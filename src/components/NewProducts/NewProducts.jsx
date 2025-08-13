@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import "./NewProducts.css";
 import Product from "../Product/Product.jsx";
-
+const API_URL = "https://spring-cloud-gateway-production-429e.up.railway.app/microservice-one";
 export default function NewProducts() {
   const [newItems, setNewItems] = useState([]);
 
   useEffect(() => {
-    fetch("https://spring-cloud-gateway-production-429e.up.railway.app/microservice-one/api/productos")
+    fetch(`${API_URL}/api/productos`)
       .then((res) => res.json())
       .then((data) => {
         const primerosSeis = data.content.slice(0, 6);

@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import "./SingleProductDetail.css";
-
+const API_URL = "https://spring-cloud-gateway-production-429e.up.railway.app/microservice-one";
 export default function SingleProductDetail({ itemId }) {
   const { addToCart } = useContext(CartContext);
   const [product, setProduct] = useState(null);
@@ -9,7 +9,7 @@ export default function SingleProductDetail({ itemId }) {
 
   useEffect(() => {
     if (itemId !== undefined && itemId !== null) {
-      fetch(`https://spring-cloud-gateway-production-429e.up.railway.app/microservice-one/api/productos/${itemId}`)
+      fetch(`${API_URL}/api/productos/${itemId}`)
         .then((res) => {
           if (!res.ok) throw new Error("Producto no encontrado");
           return res.json();
