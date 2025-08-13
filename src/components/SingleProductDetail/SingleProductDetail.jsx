@@ -9,7 +9,7 @@ export default function SingleProductDetail({ itemId }) {
 
   useEffect(() => {
     if (itemId !== undefined && itemId !== null) {
-      fetch(`https://gateway-production-b320.up.railway.app/api/productos/${itemId}`)
+      fetch(`https://spring-cloud-gateway-production-429e.up.railway.app/microservice-one/api/productos/${itemId}`)
         .then((res) => {
           if (!res.ok) throw new Error("Producto no encontrado");
           return res.json();

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import "./SearchResults.css";
-
+const API_URL = "https://spring-cloud-gateway-production-429e.up.railway.app/microservice-one";
 export default function SearchResults() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
@@ -22,7 +22,7 @@ export default function SearchResults() {
       setError(null);
 
       fetch(
-        `https://gateway-production-b320.up.railway.app/api/productos/search?name=${encodeURIComponent(
+        `${API_URL}/api/productos/search?name=${encodeURIComponent(
           query
         )}`
       )

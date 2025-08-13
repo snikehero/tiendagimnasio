@@ -6,7 +6,7 @@ export default function NewProducts() {
   const [newItems, setNewItems] = useState([]);
 
   useEffect(() => {
-    fetch("https://gateway-production-b320.up.railway.app/api/productos")
+    fetch("https://spring-cloud-gateway-production-429e.up.railway.app/microservice-one/api/productos")
       .then((res) => res.json())
       .then((data) => {
         const primerosSeis = data.content.slice(0, 6);

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import { useOutletContext } from "react-router";
 import Product from "../../components/Product/Product.jsx";
 import "./AllProducts.css";
-const API_URL = "https://gateway-production-b320.up.railway.app";
+const API_URL = "https://spring-cloud-gateway-production-429e.up.railway.app/microservice-one";
 export default function AllProducts() {
   const { searchTerm } = useOutletContext() || { searchTerm: "" };
   const [selectedCategory, setSelectedCategory] = useState("Todos");
